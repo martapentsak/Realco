@@ -1,0 +1,19 @@
+.promo {
+    background-color: #939878;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    position: relative;
+
+    &__close-btn {
+        position: absolute;
+        right: 20px;
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 25px;
+        top: 20%;
+    }
+}

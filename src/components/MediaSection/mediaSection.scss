@@ -1,0 +1,24 @@
+.media-section {
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.media-section__image {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+@media (max-width: 1000px) {
+    .media-section__image {
+        flex-wrap: wrap;
+    }
+
+    .media-section__info {
+        margin-bottom: 20px;
+    }
+}

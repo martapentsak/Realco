@@ -1,0 +1,119 @@
+.find-home {
+    height: calc(100vh - 74px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__left {
+        height: 100%;
+        justify-content: flex-end;
+        align-items: center;
+        display: flex;
+        position: relative;
+        background-color: $color-background;
+        min-width: 50%;
+    }
+
+    &__content {
+        margin: 0 auto;
+        margin-left: 15%;
+        margin-right: 10%;
+        z-index: 1;
+    }
+
+    &__description {
+        font-size: 22px;
+        line-height: 30px;
+        color: $color-description;
+    }
+
+    &__title {
+        font-size: 60px;
+        margin: 25px 0;
+    }
+
+    &__top-left-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__botton-right-img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: rotate(180deg);
+    }
+
+    &__main-img {
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+            max-height: 900px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__input-wrapper {
+        position: relative;
+        width: 60%;
+    }
+
+    &__input {
+        box-sizing: border-box;
+        height: 45px;
+        width: 100%;
+        padding: 15px 20px 15px 35px;
+        border: 1px solid rgb(233 235 231);
+        border-radius: 4px;
+        box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+        margin-right: 10px;
+    }
+
+    &__input-icon {
+        position: absolute;
+        left: 12px;
+        top: 12px;
+        font-size: 20px;
+        color: $color-description;
+        pointer-events: none;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .find-home {
+        height: 100%;
+        flex-direction: column;
+        align-items: start;
+
+        &__left {
+            min-width: 100%;
+            padding: 120px 0;
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__content {
+            max-width: 600px;
+            margin-left: 8%;
+        }
+
+
+    }
+}
